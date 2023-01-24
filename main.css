@@ -27,6 +27,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  min-width: 1170px;
 
   padding-top: 45px;
   padding-bottom: 146px;
@@ -277,6 +278,10 @@ a {
     line-height: 40px;
     opacity: 0.54;
     margin-bottom: 18px;
+}
+
+.aside-mail:focus {
+    outline: #b59f5b 1px solid;
 }
 
 .distribution-button {
