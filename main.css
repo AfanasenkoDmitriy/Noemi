@@ -189,6 +189,17 @@ a {
     font-size: 14px;
     line-height: 29px;
     color: #0f0d0e;
+    position: relative;
+}
+
+.aside-title::after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    border-bottom: 3px solid #b59f5b;
+    left: 112px;
+    top: 40px;
+    opacity: 0.4;
 }
 
 .aside-article {
@@ -215,6 +226,95 @@ a {
     opacity: 0.54;
     padding: 0;
     margin-top: -12px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 62px;
+}
+
+.aside-search {
+    background-color: #f4f7f6;
+    border: none;
+    height: 47px;
+    width: 223px;
+    padding: 17px 19px 18px;
+    font-size: 13px;
+    line-height: 40px;
+    opacity: 0.54;
+}
+
+.aside-search:focus {
+    outline: #b59f5b 1px solid;
+    outline-offset: -1px;
+}
+
+.button-search {
+    background-color: #b59f5b;
+    width: 47px;
+    height: 47px;
+    border: none;
+    position: relative;
+    background: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #b59f5b;
+}
+
+.button-search:hover {
+    background-color: #323232;
+}
+
+.aside-mail {
+    width: 272px;
+    height: 48px;
+    border: none;
+    padding: 17px 19px 18px;
+    background-color: #f4f7f6;
+    font-size: 13px;
+    line-height: 40px;
+    opacity: 0.54;
+    margin-bottom: 18px;
+}
+
+.distribution-button {
+    background-color: #b59f5b;
+    width: 272px;
+    height: 47px;
+    border: none;   
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.distribution-button:hover {
+    background-color: #323232;
+}
+
+.tags-list {
+    display: flex;
+    width: 272px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.tags-list-item {
+    border: 3px solid #f4f3f1;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    min-width: 55px;
+    text-align: center;
+    padding: 7px 14px;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
 }
 
 .aside-article-title {
